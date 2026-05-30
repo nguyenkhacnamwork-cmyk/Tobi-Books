@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tobi Book</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- TOP -->
+
+<div class="topbar">
+
+<div>
+
+📚 Tobi Book
+
+</div>
+
+<div>
+
+<a href="dangky.html">Đăng ký</a>
+
+|
+
+<a href="dangnhap.html">Đăng nhập</a>
+
+|
+
+<button onclick="dark()">
+
+🌙
+
+</button>
+
+</div>
+
+</div>
+
+
+<!-- HEADER -->
+
+<header>
+
+<img
+src="images/logo.jpg"
+class="logo">
+
+
+<div class="search">
+
+<input
+type="text"
+placeholder="Tìm sách...">
+
+<button>
+
+Tìm
+
+</button>
+
+</div>
+
+</header>
+
+
+<!-- MENU -->
+
+<nav>
+
+<a class="active"
+href="index.html">
+
+Trang chủ
+
+</a>
+
+<a href="sanpham.html">
+
+Sản phẩm
+
+</a>
+
+<a href="gioithieu.html">
+
+Giới thiệu
+
+</a>
+
+<a href="lienhe.html">
+
+Liên hệ
+
+</a>
+
+<a href="lab.html">
+Bài Lab
+</a>
+
+<a href="giohang.html">
+
+Giỏ hàng
+
+</a>
+
+<a href="dangnhap.html">
+
+Đăng nhập
+
+</a>
+
+</nav>
+
+
+<!-- CONTENT -->
+
+<div class="container">
+
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2>
+
+Danh mục
+
+</h2>
+
+<ul>
+
+<li onclick="filterBook('vanhoc')">
+
+📖 Văn học
+
+</li>
+
+<li onclick="filterBook('kinhte')">
+
+💰 Kinh tế
+
+</li>
+
+<li onclick="filterBook('kynang')">
+
+🧠 Kỹ năng
+
+</li>
+
+<li onclick="filterBook('cntt')">
+
+💻 CNTT
+
+</li>
+
+<li onclick="filterBook('tamly')">
+
+❤️ Tâm lý
+
+</li>
+
+<li onclick="filterBook('all')">
+
+📚 Tất cả
+
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- PRODUCTS -->
+
+<div class="products">
+
+<p>
+
+Chào mừng đến với Tobi Book 📚
+
+</p>
+
+<h1>
+
+Sách nổi bật
+
+</h1>
+
+
+<div class="grid">
+
+
+<!-- 1 -->
+
+<div class="card kynang">
+
+<img src="images/book1.jpg">
+
+<h3>Đắc Nhân Tâm</h3>
+
+<p class="price">120.000đ</p>
+
+<a href="chitiet.html">
+
+<button onclick="buy()">
+
+Mua ngay
+
+</button>
+
+</a>
+
+</div>
+
+
+<!-- 2 -->
+
+<div class="card vanhoc">
+
+<img src="images/book2.jpg">
+
+<h3>Nhà Giả Kim</h3>
+
+<p class="price">150.000đ</p>
+
+<a href="chitiet.html">
+
+<button onclick="buy()">
+
+Mua ngay
+
+</button>
+
+</a>
+
+</div>
+
+
+<!-- 3 -->
+
+<div class="card kynang">
+
+<img src="images/book3.jpg">
+
+<h3>Atomic Habits</h3>
+
+<p class="price">220.000đ</p>
+
+<a href="chitiet.html">
+
+<button onclick="buy()">
+
+Mua ngay
+
+</button>
+
+</a>
+
+</div>
+
+
+<!-- 4 -->
+
+<div class="card tamly">
+
+<img src="images/book4.jpg">
+
+<h3>Tâm lý học</h3>
+
+<p class="price">180.000đ</p>
+
+<a href="chitiet.html">
+
+<button onclick="buy()">
+
+Mua ngay
+
+</button>
+
+</a>
+
+</div>
+
+
+<!-- 5 -->
+
+<div class="card kynang">
+
+<img src="images/book5.jpg">
+
+<h3>Tuổi Trẻ Đáng Giá Bao Nhiêu</h3>
+
+<p class="price">145.000đ</p>
+
+<a href="chitiet.html">
+
+<button onclick="buy()">
+
+Mua ngay
+
+</button>
+
+</a>
+
+</div>
+
+
+<!-- 6 -->
+
+<div class="card tamly">
+
+<img src="images/book6.jpg">
+
+<h3>Dám Bị Ghét</h3>
+
+<p class="price">165.000đ</p>
+
+<a href="chitiet.html">
+
+<button onclick="buy()">
+
+Mua ngay
+
+</button>
+
+</a>
+
+</div>
+
+
+<!-- 7 -->
+
+<div class="card vanhoc">
+
+<img src="images/book7.jpg">
+
+<h3>Cây Cam Ngọt Của Tôi</h3>
+
+<p class="price">135.000đ</p>
+
+<a href="chitiet.html">
+
+<button onclick="buy()">
+
+Mua ngay
+
+</button>
+
+</a>
+
+</div>
+
+
+<!-- 8 -->
+
+<div class="card cntt">
+
+<img src="images/book8.jpg">
+
+<h3>Lập Trình C++ Cơ Bản</h3>
+
+<p class="price">250.000đ</p>
+
+<a href="chitiet.html">
+
+<button onclick="buy()">
+
+Mua ngay
+
+</button>
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- TOP -->
+
+<button id="top">
+
+↑
+
+</button>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div>
+
+📚 Tobi Book
+
+</div>
+
+<div>
+
+Nguyễn Khắc Nam
+
+</div>
+
+<div>
+
+DH52301202
+
+</div>
+
+</footer>
+
+
+<script
+src="js/script.js">
+
+</script>
+
+</body>
+
+</html>
